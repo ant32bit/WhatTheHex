@@ -1,0 +1,214 @@
+﻿<UserControl x:Class="WhatTheHex.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <Grid x:Name="LayoutRoot" Background="Black" ShowGridLines="True">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+            <sdk:Label Name="labelColour" Content="What the Hex?" FontSize="64" FontFamily="Portable User Interface" HorizontalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <sdk:Label.Foreground>
+                    <SolidColorBrush x:Name="labelBrush" Color="White" />
+                </sdk:Label.Foreground>
+            </sdk:Label>
+            <StackPanel Name="spSelection">
+                <StackPanel.Resources>
+                    <Storyboard x:Name="sbNewGame">
+                        <DoubleAnimation Duration="0:0:1" To="120" Storyboard.TargetName="spRow1" Storyboard.TargetProperty="Height" />
+                    </Storyboard>
+                </StackPanel.Resources>
+                <StackPanel Name="spRow1"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="0" Width="550">
+                    <Rectangle Height="100" Name="boxColor1" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush1" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane1" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor2" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush2" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane2" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor3" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush3" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane3" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor4" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush4" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane4" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor5" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseLeave="boxColor_MouseOff" MouseEnter="boxColor_MouseOn">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush5" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane5" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+                </StackPanel>
+                <StackPanel Name="spRow2"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="0" Width="550">
+                    <Rectangle Height="100" Name="boxColor6" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush6" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane6" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor7" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush7" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane7" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor8" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseLeave="boxColor_MouseOff" MouseEnter="boxColor_MouseOn">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush8" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane8" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor9" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush9" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane9" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor10" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush10" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane10" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+                </StackPanel>
+                <StackPanel Name="spRow3"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="0" Width="550">
+                    <Rectangle Height="100" Name="boxColor11" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush11" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane11" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor12" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush12" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane12" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor13" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush13" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane13" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor14" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush14" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane14" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor15" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush15" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane15" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+                </StackPanel>
+                <StackPanel Name="spRow4"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="0" Width="550">
+                    <Rectangle Height="100" Name="boxColor16" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush16" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane16" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor17" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush17" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane17" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor18" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush18" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane18" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor19" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush19" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane19" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+
+                    <Rectangle Height="100" Name="boxColor20" StrokeThickness="0" Width="100" RadiusX="10" RadiusY="10" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Left" MouseLeftButtonUp="boxColor_MouseLeftButtonUp" MouseEnter="boxColor_MouseOn" MouseLeave="boxColor_MouseOff">
+                        <Rectangle.Fill>
+                            <SolidColorBrush x:Name="boxBrush20" Color="Black" />
+                        </Rectangle.Fill>
+                        <Rectangle.Projection>
+                            <PlaneProjection x:Name="boxPlane20" />
+                        </Rectangle.Projection>
+                    </Rectangle>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Name="spSettings"  Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                <Button Content="New Game" Height="34" Name="buttonNewGame" Width="114" Click="buttonNewGame_Click" HorizontalAlignment="Right" Margin="10" />
+                <sdk:Label Height="20" Name="labelDifficulty" Width="63" Content="Difficulty: " Foreground="White" HorizontalContentAlignment="Right" />
+                <Slider Height="31" Name="sliderDifficulty" Width="133" SmallChange="1" Minimum="0" Value="2" LargeChange="1" Maximum="9" />
+                <sdk:Label Height="46" Name="labelClickedColor" Width="208" HorizontalContentAlignment="Right" Foreground="White" Content="" FontSize="32" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
